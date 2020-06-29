@@ -35,14 +35,14 @@
  
  ### 2、修改Processor
  
- 在run_classsifier.py文件中我们可以看到，google对于一些公开数据集已经写了一些processor，如XnliProcessor,MnliProcessor,MrpcProcessor和ColaProcessor，因此对于自己的Processor依样画葫芦~~复制粘贴~~即可。对应文本二分类任务，get_labels函数写成如下的形式：
+ 在run_classsifier.py文件中我们可以看到，google对于一些公开数据集已经写了一些Processor，如XnliProcessor,MnliProcessor,MrpcProcessor和ColaProcessor，因此对于自己的Processor依样画葫芦~~复制粘贴~~即可。对应文本二分类任务，get_labels函数写成如下的形式：
  
  ```
  def get_labels(self):
         return ['0', '1']
  ```
  
- 修改完成processor后，需要在在原本main函数的processor字典里，加入修改后的processor类，即可在运行参数里指定调用该processor
+ 修改完成Processor后，需要在在原本main函数的Processor字典里加入修改后的Processor类，即可在运行参数里指定调用该Processor
  
  ```
  processors = {
