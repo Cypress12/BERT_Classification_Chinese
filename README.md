@@ -2,7 +2,7 @@
 
 利用BERT模型进行中文情感二分类项目
 
-开发环境：Google colaboratory
+开发环境：Google Colaboratory
 
 ### 数据集
 
@@ -35,7 +35,7 @@
  
  ### 2、修改Processor
  
- 在run_classsifier.py文件中我们可以看到，google对于一些公开数据集已经写了一些Processor，如XnliProcessor,MnliProcessor,MrpcProcessor和ColaProcessor，因此对于自己的Processor依样画葫芦~~复制粘贴~~即可。对应文本二分类任务，get_labels函数写成如下的形式：
+ 在run_classsifier.py文件中我们可以看到，Google对于一些公开数据集已经写了一些Processor，如XnliProcessor,MnliProcessor,MrpcProcessor和ColaProcessor，因此对于自己的Processor依样画葫芦~~复制粘贴~~即可。对应文本二分类任务，get_labels函数写成如下的形式：
  
  ```
  def get_labels(self):
